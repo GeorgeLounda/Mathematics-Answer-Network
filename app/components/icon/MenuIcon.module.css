@@ -1,0 +1,8 @@
+.icon {
+  width: 5rem;
+  height: 5rem;
+  stroke: var(--logo);
+  stroke-width: 2rem;
+  stroke-linecap: round;
+  cursor: pointer;
+}
