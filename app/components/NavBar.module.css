@@ -1,9 +1,14 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 .navbarcomponent {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.active {
+  background-color: var(--bar-background);
 }

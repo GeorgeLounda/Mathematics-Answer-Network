@@ -1,19 +1,23 @@
 import LogoApple from "./icon/LogoApple";
 import MenuIcon from "./icon/MenuIcon";
-import SignUpLogin from "./button/SignUpLogin";
+import SignUpLoginBtn from "./button/SignUpLoginBtn";
 import styles from "./NavBar.module.css";
 
-export default function NavBar() {
+export default function NavBar({ onIsActive, isActive }) {
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${isActive ? styles.active : ""}`}>
       <div className={styles.navbarcomponent}>
-        <MenuIcon />
-        <LogoApple />
+        <MenuIcon onIsActive={onIsActive} isActive={isActive} />
+        <LogoApple isActive={isActive} />
       </div>
-      <div className={styles.navbarcomponent}>
-        <SignUpLogin>Sign up</SignUpLogin>
-        <SignUpLogin>Log in</SignUpLogin>
-      </div>
+      {isActive ? (
+        ""
+      ) : (
+        <div className={styles.navbarcomponent}>
+          <SignUpLoginBtn>Sign up</SignUpLoginBtn>
+          <SignUpLoginBtn>Log in</SignUpLoginBtn>
+        </div>
+      )}
     </nav>
   );
 }

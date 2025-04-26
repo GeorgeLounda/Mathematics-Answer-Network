@@ -2,11 +2,15 @@
 
 :root {
   --logo: #868e96;
+  --logo-active: #fff;
   --footer-background: #000;
   --footer-text: #b8b8b8;
   --signuplogin-background-btn: #3c4248;
   --signuplogin-text-btn: #ffffff;
   --background: #f8f9fa;
+  --header-text: #3b3535;
+  --paragraph-text: #514b4b;
+  --bar-background: #3b3535;
 }
 * {
   font-family: sans-serif;
