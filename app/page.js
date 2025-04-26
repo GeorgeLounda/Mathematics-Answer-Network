@@ -7,6 +7,7 @@ export default function page() {
     <div className={styles.container}>
       <div className={styles.content}>
         <NavBar />
+        <HeroSection />
       </div>
       <Footer />
     </div>
