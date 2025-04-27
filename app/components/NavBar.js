@@ -8,7 +8,7 @@ export default function NavBar({ onIsActive, isActive }) {
     <nav className={`${styles.navbar} ${isActive ? styles.active : ""}`}>
       <div className={styles.navbarcomponent}>
         <MenuIcon onIsActive={onIsActive} isActive={isActive} />
-        <LogoApple isActive={isActive} />
+        <LogoApple onIsActive={onIsActive} isActive={isActive} />
       </div>
       {isActive ? (
         ""

@@ -1,7 +1,7 @@
 import styles from "./LogoApple.module.css";
-export default function LogoApple({ isActive }) {
+export default function LogoApple({ isActive, onIsActive }) {
   return (
-    <button>
+    <button onClick={() => onIsActive((isActive) => (isActive ? !isActive : isActive))}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`${styles.icon} ${isActive ? styles.active : ""}`}

@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  min-height: 7rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  z-index: 999;
 }
 .navbarcomponent {
   display: flex;
