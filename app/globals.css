@@ -14,6 +14,9 @@
   --bar-background: #3b3535;
   --bar-overlay: rgba(0, 0, 0, 0.8);
   --menu-background: #3c4248;
+  --icon-hover: #afafaf;
+  --animatiom-background: #f8f9fa;
+  --animatiom-object: #3b3535;
 }
 * {
   font-family: sans-serif;
